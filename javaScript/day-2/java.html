@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edyoda java strings</h1>
+<p id="para"></p>
+<p id="para1"></p>
+<script>
+
+    let myfirststr= "Hello Ankit how are you"
+    console.log(myfirststr.length)
+    console.log("this is length of my string=",myfirststr.length)
+
+// inbuilt method of js string
+
+let mynewstr= "Ankit panwar and gourav kapoor"
+console.log(mynewstr.slice(4-12))
+console.log(mynewstr.slice(-4-12))
+let newstrn= (mynewstr.slice(4-12))
+document.getElementById("para").innerHTML=newstrn;
+
+// Replace string
+
+let mystring= "i am ankit and i'm from panipat"
+
+console.log(mystring.replace("panipat","karnal"))
+
+// Replace all string
+
+let thatstrn= "this is ankit and he learn the web developer"
+
+console.log(thatstrn.replaceAll(thatstrn,"this is ankit panwar and his profection is web development"))
+
+
+ 
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

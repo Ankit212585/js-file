@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>This is arrey section</h1>
+    <script>
+        var mystudents = ['Aryan', 'jyoti', 'khushi', 'jhalak' ]
+        console.log(mystudents)
+        console.log(typeof(mystudents))
+
+        console.log(mystudents[2])
+        console.log(mystudents[5])
+
+        //update values
+        mystudents[1] = 'ravi'
+        console.log(mystudents)
+
+        //Add more items
+        mystudents[4] = 'ankit'
+        console.log(mystudents)
+        //when we don't know what is mystudents length
+        mystudents[10] = 'monika'
+        console.log(mystudents)
+
+        mystudents[mystudents.length] = 'natasha'
+        console.log(mystudents)
+
+        //push
+
+        mystudents.push('nandi')
+        console.log(mystudents)
+
+        //Delet value
+       var mName= mystudents.pop()
+       console.log(mName)
+        console.log(mystudents)
+
+         console.clear()
+
+         var friend = ['sanju','mansi','priya','anita']
+         console.log(friend)
+console.log(friend[2])
+console.log(friend[10])
+ //add some names
+ friend[4] = 'kajal'
+ console.log(friend)
+ //we don't know what is length
+ friend[friend.length] = 'natasha'
+ console.log(friend)
+
+ //push
+ friend.push('khushi')
+ console.log(friend)
+ console.clear()
+ 
+ var Name = 'Ankit';
+ if(Name === 'Ankit'){
+    console.log("this is me")
+ }else if(Name === 'Rohit'){
+    console.log("This is Rohit")
+ }else if(Name === 'Mohit'){
+    console.log("This is mohit")
+ }else if(Name === 'Nitin'){
+    console.log("This is mohit")
+ }else if(Name === 'Gourav'){
+    console.log("This is Gourav")
+ }else{
+    
+ }
+ switch(Name){
+case 'Ankit':
+    console.log("Hy this is Ankit")
+ break;
+ case 'Rohit':
+ console.log("Hy this is Rohit")
+
+ }
+        
+
+            
+         
+    </script>
+</body>
+</html>

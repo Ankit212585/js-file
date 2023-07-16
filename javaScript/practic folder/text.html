@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // Question 1:
+    // var str1 = 'Today is';
+    // var str2 = '      a beautiful day     '
+    // var str3 = ' In Hawaii.     '
+    // Result = 'Today is a beautiful day In Hawaii.'
+    // Use the str1, str2, str3 variables to create the Result string. Keep the extra spaces, lowercase and uppercase letters in mind.
+
+    var str1 = 'Today is';
+    var str2 = '      a beautiful day     '
+    var str3 = ' In Hawaii.     '
+
+    console.log(str1+" "+str2.trim()+str3);
+    // Question 2:
+    // var enteredAlphabet = 'd' or "D"
+    // Write a program to check vowel, consonant or non-alphabet using switch case.
+    // Change value of enteredAlphabet and check if your code works fine.
+
+   // function vowels(Ravi) {
+
+    //   switch (Ravi) {
+    //     case 'a':
+     //    case 'e':
+     //    case 'i':
+   //      case 'o':
+   //      case 'u':
+   //      case 'A':
+   //      case 'E':
+  //       case 'I':
+  ///       case 'O':
+  //      case 'U':
+  //           console.log(Ravi+" is a vowel");
+  //           break;
+ //        default:
+  //           if(Ravi > 'A' && Ravi < 'Z'){
+  //               console.log(alpha+" is a consonent");
+  //           }
+ //            else if(Ravi > 'a' && Ravi < 'z'){
+ //                console.log(Ravi+" is a consonent");
+ //            }
+  //           else{
+ //               console.log(Ravi+" is not an alphabet")
+  //          }
+  //   }
+  //   }
+
+
+  //   var alpha = prompt("enter any alphabet");
+  //   vowels(alpha);
+
+  //   switch (alpha.toLowerCase()) {
+  //       case 'a':
+  //           console.log(alpha+" is a vowel.");
+  //      case 'e':
+  //      case 'i':
+  //    case 'o':
+ //       case 'u':
+ //   }
+
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    // Question 3:
+    // Write a JavaScript program to create menu driven calculator that performs basic arithmetic
+    //operations (add, subtract, multiply and divide) using switch case. The calculator should input two numbers and an
+    //operator: +, -, *, / from the user.
+    //It should perform operation according to the operator entered and must take input in given format.
+
+
+     function calculator() {
+         var num1 = parseInt(prompt("enter the number1"));
+         var num2 = parseInt(prompt("enter the number2"));
+         var oper = prompt("enter an operator");
+         switch (oper) {
+             case '+':
+                result = num1 + num2;
+                 console.log("Result:" + result);
+               break;
+             case '-':
+                 result = num1 - num2;
+                 console.log("Result:" + result);
+                break;
+            case '*':
+                 result = num1 * num2;
+                 console.log("Result:" + result);
+             break;
+             case '/':
+                if(num2==0){
+                 console.log("Error:Number 2 should no be 0");
+                }
+                else{
+                 result=num1/num2;
+                 console.log("Result:" + result);
+                }
+                 break;
+             default:
+                console.log(" Invalid operator "+oper);
+     }
+     }
+
+
+
+     var reetu=calculator();
+     console.log(Ravi);
+
+
+    
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    // Question 4:
+    // Write a JavaScript program to input sides of a triangle and check whether a triangle is equilateral, 
+    //scalene or isosceles triangle using if else.
+    // Properties of triangle:
+    // A triangle is said Equilateral Triangle, if all its sides are equal. If a, b, c are three sides of triangle. 
+    //Then, the triangle is equilateral only if a == b == c.
+    // A triangle is said Isosceles Triangle, if its two sides are equal. If a, b, c are three sides of triangle. 
+    //Then, the triangle is isosceles if either a == b or a == c or b == c.
+    // A triangle is said Scalene Triangle, if none of its sides are equal.
+//     function triangle() {
+//         var a = prompt("enter side 1 of triangle");
+//         var b = prompt("enter side 2 of triangle");
+//         var c = prompt("enter side 3 of triangle");
+
+//         if (a == b && b == c && c == a) {
+//             console.log("Triangle is a Equilateral");
+//         }
+
+//         else if(a == b || b == c || c == a){
+//             console.log("Triangle is a Isoceles");
+//         }
+
+//         else{
+//             console.log("Triangle is a Scalane");
+//         }
+//     }
+
+
+// var res=triangle();
+// console.log(res);
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Question 5:
+// Write a JavaScript program to input electricity unit charge and calculate the total electricity bill according to the given condition:
+// For first 50 units Rs. 0.50/unit
+// For next 100 units Rs. 0.75/unit
+// For next 100 units Rs. 1.20/unit
+// For unit above 250 Rs. 1.50/unit. An additional surcharge of 20% is added to the bill.
+// For example, input: 20 units then bill is Rs10
+// Total Units: 300
+// 50 * 0.5 = 25
+// 100 * 0.75 = 75
+// 100 * 1.2 = 120
+// 50 * 1.5 = 75
+// Total = 295 + 20% surcharge on 295
+// Result = INR 354
+
+//function calculateElectricityBill(units) {
+ // let totalBill = 0;
+
+  //if (units <= 50) {
+ //   totalBill = units * 0.5;
+ /// } else if (units <= 150) {
+  //  totalBill = 50 * 0.5 + (units - 50) * 0.75;
+ // } else if (units <= 250) {
+ //   totalBill = 50 * 0.5 + 100 * 0.75 + (units - 150) * 1.2;
+  //} else {
+ //   totalBill = 50 * 0.5 + 100 * 0.75 + 100 * 1.2 + (units - 250) * 1.5;
+ // }
+
+  // Adding 20% surcharge
+  //const surcharge = totalBill * 0.2;
+ // totalBill += surcharge;
+
+  //console.log("Total Units: " + units);
+  //console.log("Bill Amount: INR " + totalBill.toFixed(2));
+//}
+
+//let units=parseInt(prompt("enter the units:"));
+//let res=calculateElectricityBill(units);
+//console.log(res)
+
+
+
+
+</script>
+
+</html>
